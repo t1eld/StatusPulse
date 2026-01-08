@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ```bash
 # Run the scanner with an input file
-python3 scanner.py -u input.txt
+python3 scanner.py -u <your_path_file>
 
 # Show help and available options
 python3 scanner.py -h
