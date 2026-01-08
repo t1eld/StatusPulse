@@ -28,12 +28,3 @@ Clone the repository and install required dependencies:
 
 ```bash
 pip install -r requirements.txt
-
-## Usage
-
-```bash
-# Run the scanner with an input file
-python3 scanner.py -u input.txt
-
-# Show help and available options
-python3 scanner.py -h
