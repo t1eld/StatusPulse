@@ -40,3 +40,15 @@ python3 scanner.py -u <your_path_file>
 # Show help and available options
 python3 scanner.py -h
 ```
+
+## Options
+
+```text
+-u, --url <file>          Path to a file containing target URLs (required)
+-o, --output <file>       Save successful (2xx) URLs to a file inside the result/ directory
+-r, --retry <number>      Number of retry attempts on failure (default: 2)
+-c, --concurrency <num>   Number of concurrent tasks (default: 10)
+-t, --timeout <seconds>   Timeout in seconds for each request (default: 20)
+--no-redirect             Disable following HTTP redirects (301, 302, etc)
+-h, --help                Show this help message and exit
+```
