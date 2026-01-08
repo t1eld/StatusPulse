@@ -52,3 +52,15 @@ python3 scanner.py -h
 --no-redirect             Disable following HTTP redirects (301, 302, etc)
 -h, --help                Show this help message and exit
 ```
+
+## Result
+
+StatusPulse automatically creates a `result/` directory to store scan results.
+
+If the `-o` or `--output` option is used, all successful URLs (HTTP status 2xx) will be saved into a file inside the `result/` directory.
+
+Example command:
+
+```bash
+python3 scanner.py -u urls.txt -o live.txt
+```
