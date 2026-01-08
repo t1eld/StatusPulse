@@ -14,8 +14,9 @@ parser.add_argument("-t", "--timeout", help="Timeout in seconds for each task", 
 parser.add_argument("--no-redirect", help="Do not follow HTTP redirects (301, 302, etc)", action="store_true")
 args = parser.parse_args()
 
-if not os.path.exists("result"):
-    os.makedirs("result")
+if args.output:
+    if not os.path.exists("result"):
+        os.makedirs("result")
 
 class Scanner:
     def __init__(self, file_path: str, retry: int = 2, concurrency: int = 10, timeout: int = 15, no_redirect: bool = False) -> None:
