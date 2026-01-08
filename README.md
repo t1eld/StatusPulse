@@ -62,5 +62,5 @@ If the `-o` or `--output` option is used, all successful URLs (HTTP status 2xx) 
 Example command:
 
 ```bash
-python3 scanner.py -u urls.txt -o live.txt
+python3 scanner.py -u <your_path_url> -o <file_result>
 ```
